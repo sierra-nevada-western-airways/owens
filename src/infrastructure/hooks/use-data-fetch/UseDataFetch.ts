@@ -2,14 +2,9 @@ import { useState, ValueDefaults } from "@/utilities";
 import type { AxiosResponse } from "axios";
 import { onMounted, type Ref } from "vue";
 import { useRouter } from "vue-router";
-import {
-  BadRequest,
-  InternalServerError,
-  NoContent,
-  Success,
-} from "./StatusCodes";
 import type { NavigationResult } from "@/router/NavigationResult";
 import { errorRoute } from "@/features/error/ErrorView.routes";
+import { StatusCodes } from "./StatusCodes";
 
 export default function useDataFetch<T>(
   initialState: T,
@@ -28,16 +23,16 @@ export default function useDataFetch<T>(
       return callback()
         .then((response: AxiosResponse<T>) => {
           switch (response.status) {
-            case Success: {
+            case StatusCodes.Success.valueOf(): {
               return updateState(response.data);
             }
-            case NoContent: {
+            case StatusCodes.NoContent.valueOf(): {
               return updateState(response.data);
             }
-            case BadRequest: {
+            case StatusCodes.BadRequest.valueOf(): {
               return setError(response.statusText);
             }
-            case InternalServerError: {
+            case StatusCodes.InternalServerError.valueOf(): {
               return router.push(errorRoute);
             }
             default: {
