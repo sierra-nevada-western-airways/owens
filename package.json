@@ -17,6 +17,8 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@types/mocha": "^10.0.6",
+    "axios": "^1.6.7",
     "bootstrap": "^5.3.3",
     "pinia": "^2.1.7",
     "sass": "^1.71.1",
@@ -24,6 +26,7 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@testing-library/cypress": "^10.0.1",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/user-event": "^14.5.2",
     "@testing-library/vue": "^8.0.2",
@@ -34,7 +37,7 @@
     "@vue/eslint-config-typescript": "^12.0.0",
     "@vue/test-utils": "^2.4.4",
     "@vue/tsconfig": "^0.5.1",
-    "cypress": "^13.6.3",
+    "cypress": "^13.6.6",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-compat": "^4.2.0",

@@ -66,5 +66,14 @@
       { "onlyFunctionsWithAsyncKeyword": true }
     ]
   },
-  "overrides": []
+  "overrides": [
+    {
+      "files": ["./cypress/**"],
+      "rules": {
+        "vitest/require-hook": 0,
+        "testing-library/await-async-query": 0,
+        "testing-library/prefer-screen-queries": 0
+      }
+    }
+  ]
 }
