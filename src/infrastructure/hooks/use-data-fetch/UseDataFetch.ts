@@ -11,7 +11,7 @@ import {
 import type { NavigationResult } from "@/router/NavigationResult";
 import { errorRoute } from "@/features/error/ErrorView.Routes";
 
-export default function useDateFetch<T>(
+export default function useDataFetch<T>(
   initialState: T,
   callback: () => Promise<AxiosResponse<T>>,
 ): [state: Ref<T>, isLoading: Ref<boolean>, error: Ref<string>] {

@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { useCounterStore } from "@/stores/Counter";
+import { useCounterStore } from "@/infrastructure";
 
 const counter = useCounterStore();
 </script>
