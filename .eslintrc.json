@@ -29,11 +29,17 @@
     "plugin:jest-dom/recommended",
     "plugin:cypress/recommended",
     "plugin:jest-formatting/strict",
+    "plugin:storybook/recommended",
     "plugin:prettier/recommended"
   ],
   "rules": {
     "@typescript-eslint/explicit-function-return-type": 2,
-    "@typescript-eslint/array-type": [2, { "default": "generic" }],
+    "@typescript-eslint/array-type": [
+      2,
+      {
+        "default": "generic"
+      }
+    ],
     "@typescript-eslint/explicit-member-accessibility": 2,
     "@typescript-eslint/member-ordering": 2,
     "@typescript-eslint/parameter-properties": 2,
@@ -51,7 +57,9 @@
     ],
     "unicorn/consistent-function-scoping": [
       2,
-      { "checkArrowFunctions": false }
+      {
+        "checkArrowFunctions": false
+      }
     ],
     "vuejs-accessibility/label-has-for": [
       2,
@@ -63,7 +71,9 @@
     ],
     "vitest/prefer-expect-assertions": [
       2,
-      { "onlyFunctionsWithAsyncKeyword": true }
+      {
+        "onlyFunctionsWithAsyncKeyword": true
+      }
     ]
   },
   "overrides": [
