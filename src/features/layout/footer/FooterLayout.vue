@@ -1,9 +1,9 @@
 <template>
   <footer>
-    <Container>{{ new Date().getFullYear() }}</Container>
+    <ContainerLayout>{{ new Date().getFullYear() }}</ContainerLayout>
   </footer>
 </template>
 
 <script setup lang="ts">
-import { Container } from "@/components";
+import { ContainerLayout } from "@/components";
 </script>

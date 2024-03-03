@@ -7,14 +7,12 @@ import renderOptionsWrapper from "@/utilities/test-helpers/RenderOptionsWrapper"
 
 describe("buttonElement", () => {
   it("renders", () => {
-    const props: ButtonElementProperties = {
-      text: "myButton",
+    const properties: ButtonElementProperties = {
+      text: "Button",
     };
 
-    render(ButtonElement, renderOptionsWrapper(props));
+    render(ButtonElement, renderOptionsWrapper(properties));
 
-    expect(
-      screen.getByRole("button", { name: props.text }),
-    ).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /button/i })).toBeInTheDocument();
   });
 });
