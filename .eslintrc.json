@@ -1,10 +1,23 @@
 {
+  "parser": "vue-eslint-parser",
   "parserOptions": {
-    "ecmaVersion": "latest"
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module",
+    "ecmaVersion": "latest",
+    "project": [
+      "./tsconfig.json",
+      "./tsconfig.vitest.json",
+      "./tsconfig.app.json",
+      "./cypress/tsconfig.json"
+    ]
   },
   "extends": [
-    "plugin:vue/vue3-essential",
     "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/strict",
+    "plugin:vue/vue3-recommended",
     "@vue/eslint-config-typescript",
     "plugin:cypress/recommended",
     "plugin:prettier/recommended"
