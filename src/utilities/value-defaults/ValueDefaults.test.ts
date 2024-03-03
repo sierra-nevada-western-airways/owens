@@ -1,9 +1,13 @@
-import { describe, it } from "vitest";
+import { expect, describe, it } from "vitest";
 import { ValueDefaults } from "./ValueDefaults";
 
 describe("valueDefaults", () => {
+  it("number has correct value", () => {
+    expect(ValueDefaults.Number).toBe(0);
+  });
+
   it("string has correct value", () => {
-    expect(ValueDefaults.String).toStrictEqual("");
+    expect(ValueDefaults.String).toBe("");
   });
 
   it("boolean has correct value", () => {

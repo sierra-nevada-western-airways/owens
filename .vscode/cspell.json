@@ -1,7 +1,10 @@
 {
   "words": [
+    "compat",
     "nightwatch",
     "pinia",
-    "tsbuildinfo"
+    "sonarjs",
+    "tsbuildinfo",
+    "vuejs"
   ]
 }

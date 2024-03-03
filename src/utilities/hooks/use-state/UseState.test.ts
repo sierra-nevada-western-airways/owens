@@ -11,6 +11,8 @@ describe("useState", () => {
   });
 
   it("updates state correctly", async () => {
+    expect.assertions(1);
+
     const user = userEvent.setup();
 
     render(UseStateTestBed);
