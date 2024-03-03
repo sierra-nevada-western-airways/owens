@@ -9,7 +9,7 @@ import {
   Success,
 } from "./StatusCodes";
 import type { NavigationResult } from "@/router/NavigationResult";
-import { errorRoute } from "@/features/error/ErrorView.Routes";
+import { errorRoute } from "@/features/error/ErrorView.routes";
 
 export default function useDataFetch<T>(
   initialState: T,
