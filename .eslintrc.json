@@ -1,0 +1,13 @@
+{
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "extends": [
+    "plugin:vue/vue3-essential",
+    "eslint:recommended",
+    "@vue/eslint-config-typescript",
+    "plugin:cypress/recommended",
+    "plugin:prettier:recommended"
+  ],
+  "overrides": []
+}
