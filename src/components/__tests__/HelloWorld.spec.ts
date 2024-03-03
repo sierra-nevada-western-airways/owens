@@ -1,11 +1,11 @@
 import { describe, it, expect } from "vitest";
-
-import { mount } from "@vue/test-utils";
+import { render, screen } from "@testing-library/vue";
 import HelloWorld from "../HelloWorld.vue";
 
 describe("HelloWorld", () => {
   it("renders properly", () => {
-    const wrapper = mount(HelloWorld, { props: { msg: "Hello Vitest" } });
-    expect(wrapper.text()).toContain("Hello Vitest");
+    render(HelloWorld);
+
+    expect(screen.getByText(/Hello World/i)).toBeInTheDocument();
   });
 });
