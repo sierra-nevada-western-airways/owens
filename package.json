@@ -13,6 +13,7 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
     "lint": "npx eslint ./src --fix --max-warnings 0",
+    "lint:e2e": "npx eslint ./cypress --fix --max-warnings 0",
     "format": "prettier --write src/",
     "prepare": "husky"
   },
