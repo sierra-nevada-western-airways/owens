@@ -72,7 +72,9 @@
       "rules": {
         "vitest/require-hook": 0,
         "testing-library/await-async-queries": 0,
-        "testing-library/prefer-screen-queries": 0
+        "testing-library/prefer-screen-queries": 0,
+        "unicorn/filename-case": 0,
+        "eslint-plugin-unicorn/prevent-abbreviations": 0
       }
     }
   ]
