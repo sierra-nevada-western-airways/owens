@@ -1,5 +1,5 @@
 <template>
-  <p>Hello World is a go.</p>
+  <p>Home!</p>
 </template>
 
 <script setup lang="ts"></script>
