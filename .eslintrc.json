@@ -7,7 +7,7 @@
     "eslint:recommended",
     "@vue/eslint-config-typescript",
     "plugin:cypress/recommended",
-    "plugin:prettier:recommended"
+    "plugin:prettier/recommended"
   ],
   "overrides": []
 }
