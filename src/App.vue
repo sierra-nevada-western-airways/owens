@@ -1,16 +1,13 @@
 <template>
-  <header>
-    <nav>
-      <RouterLink :to="homeRoute">Home</RouterLink>
-    </nav>
-  </header>
+  <HeaderLayout />
   <main>
     <RouterView />
   </main>
-  <footer></footer>
+  <FooterLayout />
 </template>
 
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import { homeRoute } from "./features/home/HomeView.routes";
+import { RouterView } from "vue-router";
+import FooterLayout from "./features/layout/footer/FooterLayout.vue";
+import HeaderLayout from "./features/layout/header/HeaderLayout.vue";
 </script>
