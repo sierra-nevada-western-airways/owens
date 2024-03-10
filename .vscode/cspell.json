@@ -5,6 +5,7 @@
     "nightwatch",
     "pinia",
     "sonarjs",
+    "storysource",
     "tsbuildinfo",
     "vuejs"
   ]
