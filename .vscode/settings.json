@@ -1,7 +1,7 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
   "editor.formatOnSave": true,
-  "editor.guides.bracketPairs": "active",
-  "files.eol": "\n",
-  "files.autoSaveDelay": 5000
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

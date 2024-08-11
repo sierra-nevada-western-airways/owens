@@ -1,7 +1,8 @@
-describe("my First Test", () => {
-  it("visits the app root url", () => {
-    cy.visit("/");
+// https://on.cypress.io/api
 
-    cy.findByText(/home!/i);
-  });
-});
+describe('My First Test', () => {
+  it('visits the app root url', () => {
+    cy.visit('/')
+    cy.contains('h1', 'You did it!')
+  })
+})
