@@ -1,0 +1,4 @@
+vite.config.ts
+vitest.config.ts
+cypress.config.ts
+src/shims-vue.d.ts
