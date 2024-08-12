@@ -1,3 +1,4 @@
+import { describe, expect, it } from "vitest";
 import HomeView from "./HomeView.vue";
 import { render, screen } from "@testing-library/vue";
 
