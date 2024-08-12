@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v4
 
       - name: Restore Dependencies
-        uses: npm ci
+        run: npm ci
 
       - name: Lint
         run: npm run lint
