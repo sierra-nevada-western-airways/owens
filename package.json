@@ -21,6 +21,8 @@
     "vue-router": "^4.3.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/vue": "^8.1.0",
     "@tsconfig/node20": "^20.1.4",
     "@types/jsdom": "^21.1.7",
     "@types/node": "^22.2.0",
